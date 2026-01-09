@@ -107,11 +107,17 @@ Respostas possíveis
 500 Internal Server Error — Erro ao enviar o e-mail
 
 🧩 Observações de Arquitetura
-O envio de e-mail é definido por uma interface, permitindo desacoplamento do provedor
+O envio de e-mail é definido por uma interface, permitindo o desacoplamento do provedor
 
 A implementação atual utiliza AWS SES
 
-A arquitetura facilita a substituição do provedor, evolução do sistema e implementação futura de failover
+A arquitetura facilita:
+
+Substituição do provedor
+
+Evolução do sistema
+
+Implementação futura de failover
 
 🔮 Melhorias Futuras
 Suporte a múltiplos provedores de e-mail (SendGrid, Mailgun, etc.)
@@ -127,9 +133,3 @@ Deploy em ambiente cloud (AWS / EC2)
 👤 Autor
 Desenvolvido por Yago
 Backend Developer | Java & Spring Boot
-
-perl
-Copiar código
-
-Se você colar isso no `README.md`, **não haverá absolutamente nada fora do arquivo**.  
-Se quiser mudar título, nome do projeto ou deixar mais curto, é só falar.
