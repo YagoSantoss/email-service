@@ -66,7 +66,7 @@ Durante o desenvolvimento deste projeto, foram praticados e consolidados os segu
 ## ⚙️ Instalação e Configuração
 
 ### Clonar o repositório
-```bash
+
 git clone https://github.com/seu-usuario/email-service.git
 Configurar credenciais da AWS
 No arquivo application.properties (ou via variáveis de ambiente):
