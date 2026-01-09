@@ -70,8 +70,8 @@ Durante o desenvolvimento deste projeto, foram praticados e consolidados os segu
 git clone https://github.com/seu-usuario/email-service.git
 Configurar credenciais da AWS
 No arquivo application.properties (ou via variáveis de ambiente):
-
-##properties
+---
+properties
 Copiar código
 aws.region=us-east-1
 aws.accessKeyId=SUA_ACCESS_KEY
