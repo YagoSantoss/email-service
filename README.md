@@ -71,14 +71,14 @@ git clone https://github.com/seu-usuario/email-service.git
 Configurar credenciais da AWS
 No arquivo application.properties (ou via variáveis de ambiente):
 
-properties
+##properties
 Copiar código
 aws.region=us-east-1
 aws.accessKeyId=SUA_ACCESS_KEY
 aws.secretKey=SUA_SECRET_KEY
 ⚠️ Caso sua conta AWS esteja em modo Sandbox do SES, os e-mails de remetente e destinatário precisam estar verificados no console da AWS.
 
-▶️ Executando a Aplicação
+##▶️ Executando a Aplicação
 Execute o projeto com Maven:
 
 bash
@@ -93,7 +93,7 @@ http://localhost:8080
 Enviar E-mail
 POST /api/email/send
 
-Corpo da requisição
+##Corpo da requisição
 json
 Copiar código
 {
@@ -106,7 +106,7 @@ Respostas possíveis
 
 500 Internal Server Error — Erro ao enviar o e-mail
 
-🧩 Observações de Arquitetura
+##🧩 Observações de Arquitetura
 O envio de e-mail é definido por uma interface, permitindo o desacoplamento do provedor
 
 A implementação atual utiliza AWS SES
@@ -119,7 +119,7 @@ Evolução do sistema
 
 Implementação futura de failover
 
-🔮 Melhorias Futuras
+##🔮 Melhorias Futuras
 Suporte a múltiplos provedores de e-mail (SendGrid, Mailgun, etc.)
 
 Estratégia de failover automático
@@ -130,6 +130,6 @@ Testes automatizados
 
 Deploy em ambiente cloud (AWS / EC2)
 
-👤 Autor
+##👤 Autor
 Desenvolvido por Yago
 Backend Developer | Java & Spring Boot
